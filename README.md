@@ -54,7 +54,11 @@ reported instead.
 
 See the [Stage C completion report](docs/stage-c-completion-report.md) for the full
 scope statement, input basis, source IDs, sensitivity runs, and limitations. The
-authoritative result is [outputs/stage_c/manifest.json](outputs/stage_c/manifest.json).
+The tracked reproducibility snapshot is
+[`data/stage_c_evidence.json`](data/stage_c_evidence.json). Full figures and
+execution manifests are generated locally under `outputs/stage_c/` when the
+validation runner is executed; that generated directory is intentionally ignored
+by Git.
 
 ## Scope and limitations
 
@@ -85,7 +89,15 @@ python -m pip install -r requirements-validation.txt
 python -m pytest -q
 ```
 
-After the first PyPI release, the package will be installable with:
+The current PyPI build is a pre-release. Install this exact reproducibility
+artifact with:
+
+```powershell
+python -m pip install --pre dynamiclh2poolx==0.2.0.dev0
+```
+
+Once a stable release is published, the `--pre` flag and version pin can be
+removed:
 
 ```powershell
 python -m pip install dynamiclh2poolx
@@ -207,6 +219,10 @@ and runtime versions needed to reproduce a run.
 
 ## Reproducing the validation record
 
+The manuscript-oriented interpretation of these results is maintained in
+[`docs/jhne-manuscript-draft.md`](docs/jhne-manuscript-draft.md), with a
+submission checklist in [`docs/jhne-submission-checklist.md`](docs/jhne-submission-checklist.md).
+
 ### Stage C restricted component validation
 
 The JUEL and HSE PDFs are not redistributed with the package. Supply their local
@@ -243,7 +259,7 @@ PDFs and other copyrighted raw materials are not redistributed.
 ```text
 src/dynamiclh2poolx/       package implementation
 tests/                     unit and contract tests
-data/                      frozen observations and validation protocols
+data/                      frozen observations, protocols, and evidence snapshot
 scripts/                   reproducible validation runners
 docs/                      design, audit, and completion reports
 outputs/stage_c/           generated validation manifests and figures
