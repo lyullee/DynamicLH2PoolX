@@ -2,7 +2,7 @@ import math
 
 import pytest
 
-from lh2poolx import LH2Release, evaluate_pool_source, flash_vapour_fraction
+from dynamiclh2poolx import LH2Release, evaluate_pool_source, flash_vapour_fraction
 
 
 def test_flash_rises_with_storage_pressure():

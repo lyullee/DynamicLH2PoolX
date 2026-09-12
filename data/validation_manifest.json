@@ -1,0 +1,26 @@
+{
+  "schema_version": "2.0",
+  "protocol": "data/dynamic_validation_protocol.json",
+  "sources": [
+    {
+      "id": "xie_2023_figure11",
+      "doi": "10.3390/pr11051415",
+      "licence": "CC BY 4.0",
+      "result": "outputs/xie2023/manifest.json"
+    },
+    {
+      "id": "dienhart_1995_juel3155",
+      "persistent_id": "http://hdl.handle.net/2128/21550",
+      "availability": "open access",
+      "result": "outputs/spreading_validation/manifest.json"
+    },
+    {
+      "id": "preslhy_e34",
+      "doi": "10.35097/1319",
+      "licence": "CC BY-SA 4.0",
+      "role": "conditional stress diagnostic",
+      "result": "outputs/dynamic_validation/summary.json"
+    }
+  ],
+  "redistributed_measurements": false
+}
