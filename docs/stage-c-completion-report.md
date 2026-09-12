@@ -114,7 +114,8 @@ RR986의 시험 ID·수직 하향·100 mm 높이와 RR985 Figure 2/Table 6/Figur
 - `outputs/stage_c/convergence/manifest.json`: C1 수치 행렬
 - `outputs/spreading_validation/manifest.json`: JUEL 지표와 민감도
 - `outputs/stage_c/hse_test6/manifest.json`: HSE 입력·결과·구조 제한
-- `outputs/stage_c/manifest.json`: 원문·코드·프로토콜 hash와 통합 판정
+- `data/stage_c_evidence.json`: 공개 저장소에 추적되는 핵심 지표·범위·hash snapshot
+- `outputs/stage_c/manifest.json`: 로컬 재실행 시 생성되는 원문·코드·프로토콜 hash와 통합 판정
 
 원문·코드·프로토콜의 SHA256과 실행 소프트웨어 버전은 각 manifest에 기록한다.
 현재 C0–C3 완료에는 유료 문헌이 필요하지 않았다. Takeno et al.와 일부 후속
