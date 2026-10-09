@@ -92,7 +92,7 @@ The current PyPI build is a pre-release. Install this exact reproducibility
 artifact with:
 
 ```powershell
-python -m pip install --pre dynamiclh2poolx==0.2.0rc1
+python -m pip install --pre dynamiclh2poolx==0.2.0rc2
 ```
 
 Once a stable release is published, the `--pre` flag and version pin can be
@@ -271,7 +271,7 @@ points remain subject to their original source licences. See [CITATION.cff](CITA
 and the [Stage C completion report](docs/stage-c-completion-report.md) for the cited
 JUEL, HSE, Xie, and supporting sources.
 
-## Research reproducibility update 0.2.0rc1
+## Research reproducibility update 0.2.0rc2
 
 The released model equations and public API are unchanged from 0.2.0.dev0.
 The [model equations and code map](docs/model-equations.md) describe the actual

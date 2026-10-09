@@ -16,10 +16,10 @@
     "post-shutoff evaporation",
     "process safety"
   ],
-  "version": "0.2.0rc1",
+  "version": "0.2.0rc2",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/lyullee/DynamicLH2PoolX/tree/v0.2.0rc1",
+      "identifier": "https://github.com/lyullee/DynamicLH2PoolX/tree/v0.2.0rc2",
       "relation": "isSupplementTo",
       "scheme": "url"
     }

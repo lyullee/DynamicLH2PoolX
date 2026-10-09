@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0rc2 — 2026-10-09
+
+- Preserve exact frozen snapshot bytes across Windows/Git newline conversion.
+- Verify provenance hashes against the Git source archive, not only the local files.
+- No numerical model or research result changes.
+
+
 ## 0.2.0rc1 — 2026-10-09
 
 - Model equations, implementation map and citation metadata updated.

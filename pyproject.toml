@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dynamiclh2poolx"
-version = "0.2.0rc1"
+version = "0.2.0rc2"
 description = "Transparent liquid-hydrogen pool source terms for declared ground inflow"
 readme = "README.md"
 requires-python = ">=3.10"

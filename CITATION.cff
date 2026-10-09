@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use DynamicLH2PoolX, please cite this software and the experimental sources underlying your analysis."
 title: "DynamicLH2PoolX"
-version: 0.2.0rc1
+version: 0.2.0rc2
 authors:
   - family-names: Lee
     given-names: Ugwiyeon
