@@ -1,0 +1,55 @@
+{
+  "manifest_id": "dynamiclh2poolx_stage_c_sources_20260911",
+  "records": [
+    {
+      "id": "JUEL3155_FIG5_24",
+      "title": "Dienhart JUEL-3155",
+      "url": "https://juser.fz-juelich.de/record/860517/files/J%C3%BCl_3155_Dienhart.pdf",
+      "pdf_page": 139,
+      "figure": "5.24",
+      "trials": [3, 4],
+      "surface": "water"
+    },
+    {
+      "id": "JUEL3155_FIG5_25",
+      "title": "Dienhart JUEL-3155",
+      "url": "https://juser.fz-juelich.de/record/860517/files/J%C3%BCl_3155_Dienhart.pdf",
+      "pdf_page": 140,
+      "figure": "5.25",
+      "trials": [5, 6],
+      "surface": "aluminium"
+    },
+    {
+      "id": "HSE_RR986_TEST6_VERTICAL_100MM",
+      "title": "Releases of unignited liquid hydrogen, RR986",
+      "url": "https://www.hse.gov.uk/research/rrpdf/rr986.pdf",
+      "pdf_pages": [21, 26],
+      "sections": ["5", "6.2"],
+      "note": "Primary experiment identity: Test 6, vertical downward, 100 mm above concrete, 561 s"
+    },
+    {
+      "id": "HSE_RR985_TEST6_FIG2_RADIUS",
+      "title": "Modelling of liquid hydrogen spills, RR985",
+      "url": "https://www.hse.gov.uk/research/rrpdf/rr985.pdf",
+      "pdf_page": 16,
+      "figure": "2",
+      "note": "Radius inferred from 0.1 m spaced surface thermocouples using T < 30 K"
+    },
+    {
+      "id": "HSE_RR985_TEST6_TABLE6_INPUT",
+      "title": "Modelling of liquid hydrogen spills, RR985",
+      "url": "https://www.hse.gov.uk/research/rrpdf/rr985.pdf",
+      "pdf_page": 32,
+      "table": "6",
+      "note": "0.0707 kg/s, 561 s, 0.025 m aperture diameter, 266 K ground proxy, 5 mm puddle depth"
+    },
+    {
+      "id": "HSE_RR985_TEST6_FIG9_GASP_COMPARISON",
+      "title": "Modelling of liquid hydrogen spills, RR985",
+      "url": "https://www.hse.gov.uk/research/rrpdf/rr985.pdf",
+      "pdf_page": 32,
+      "figure": "9",
+      "note": "Published GASP comparison; not a DynamicLH2PoolX calibration target"
+    }
+  ]
+}

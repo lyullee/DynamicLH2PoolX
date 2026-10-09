@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "dynamiclh2poolx"
-version = "0.2.0rc1"
-description = "Transparent liquid-hydrogen pool source terms for declared ground inflow"
+name = "lh2poolx"
+version = "0.1.2"
+description = "Transparent liquid-hydrogen pool source terms for dispersion models"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
@@ -18,20 +18,20 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Topic :: Scientific/Engineering",
 ]
-dependencies = ["CoolProp>=6.5", "numpy>=1.24"]
+dependencies = ["CoolProp>=6.5"]
 
 [project.optional-dependencies]
-test = ["pytest>=7", "openpyxl>=3.1", "matplotlib>=3.8"]
+test = ["pytest>=7"]
 
 [project.urls]
-Source = "https://github.com/lyullee/DynamicLH2PoolX"
-Documentation = "https://github.com/lyullee/DynamicLH2PoolX#readme"
+Source = "https://github.com/lyullee/lh2poolx"
+Documentation = "https://github.com/lyullee/lh2poolx#readme"
 
 [tool.hatch.build.targets.sdist]
-include = ["src", "tests", "scripts", "docs", "data", "requirements-validation.txt", "README.md", "LICENSE", "CHANGELOG.md", "CITATION.cff", ".zenodo.json", "research"]
+include = ["src", "tests", "docs", "README.md", "LICENSE", "CHANGELOG.md", "CITATION.cff"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/dynamiclh2poolx"]
+packages = ["src/lh2poolx"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

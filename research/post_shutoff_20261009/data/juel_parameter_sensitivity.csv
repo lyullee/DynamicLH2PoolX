@@ -1,0 +1,7 @@
+﻿surface,parameter,holdout_rmse_m,radius_at_60s_m,is_frozen_base
+water,180000.0,0.12719189352225943,0.42,False
+water,200000.0,0.13743685418725532,0.4,True
+water,220000.0,0.14966629547095767,0.38,False
+aluminium,0.35,0.10972693379476164,0.48,False
+aluminium,0.4,0.10158740079360236,0.46,True
+aluminium,0.45,0.10039920318408907,0.44,False

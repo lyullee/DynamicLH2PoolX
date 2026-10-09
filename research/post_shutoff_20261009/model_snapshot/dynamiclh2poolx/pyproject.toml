@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dynamiclh2poolx"
-version = "0.2.0rc1"
+version = "0.2.0.dev0"
 description = "Transparent liquid-hydrogen pool source terms for declared ground inflow"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -28,7 +28,7 @@ Source = "https://github.com/lyullee/DynamicLH2PoolX"
 Documentation = "https://github.com/lyullee/DynamicLH2PoolX#readme"
 
 [tool.hatch.build.targets.sdist]
-include = ["src", "tests", "scripts", "docs", "data", "requirements-validation.txt", "README.md", "LICENSE", "CHANGELOG.md", "CITATION.cff", ".zenodo.json", "research"]
+include = ["src", "tests", "scripts", "docs", "data", "requirements-validation.txt", "README.md", "LICENSE", "CHANGELOG.md", "CITATION.cff"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/dynamiclh2poolx"]

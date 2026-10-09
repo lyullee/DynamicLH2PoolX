@@ -1,0 +1,37 @@
+{
+  "protocol_id": "dynamiclh2poolx_v02_component_validation_20260911",
+  "release_gate": {
+    "stage_b": "Reproduce Xie et al. 2023 Figure 11 post-fill vaporisation-rate observations using the published penetration-theory closure.",
+    "stage_c": "Calibrate one surface coefficient on Dienhart Trials 3 and 5, freeze it, and assess radius on held-out Trials 4 and 6 plus the reported continuous-film video bands.",
+    "required_decisions": [
+      "PASS_FIXED_AREA_PTC_RATE_REPRODUCTION",
+      "PASS_RESTRICTED_SPREADING"
+    ]
+  },
+  "xie_2023": {
+    "doi": "10.3390/pr11051415",
+    "observable": "Figure 11 evaporation velocity versus post-fill time",
+    "validation_points": "nine black experimental markers",
+    "input_recovery": "the separate red prediction curve is fitted only to recover its unreported thermal-age offset and initial substrate temperature",
+    "excluded": "Figure 9 mass integration because Figures 9 and 11 are different runs/clocks and the linking initial temperature is not published",
+    "gate": "9 points; reproduced mean and maximum relative errors each within 0.02 absolute of the published values; published red-curve RMSE <= 6e-6 m/s"
+  },
+  "dienhart_1995": {
+    "persistent_id": "http://hdl.handle.net/2128/21550",
+    "observables": "Figures 5.24 and 5.25 discrete front radii and continuous-film video bands",
+    "calibration_trials": [3, 5],
+    "holdout_trials": [4, 6],
+    "water_heat_flux_W_m2": 200000.0,
+    "aluminium_heat_flux_multiplier": 0.4,
+    "primary_time_window_s": [0.0, 62.0],
+    "gate": "held-out RMSE <= 0.15 m for each surface and 10-60 s video-band coverage >= 0.90"
+  },
+  "preslhy": {
+    "doi": "10.35097/1319",
+    "role": "conditional stress diagnostic; not a v0.2 release gate because a measured inlet history is unavailable and repeated fills are correlated",
+    "Concrete02_windows_orig_s": [[683.0, 716.0], [856.0, 893.0], [949.5, 1073.5], [1180.5, 1295.5]],
+    "Concrete03_window_rule": "30 seconds after rule-based fill peaks; conditional post-fill assumption",
+    "clock_correction": "temperature is interpolated from X_Value onto Sync.Time; scale mass remains on Orig.Time"
+  },
+  "redistribution": "Source PDFs and workbooks remain external. Generated derived comparisons are local ignored outputs."
+}

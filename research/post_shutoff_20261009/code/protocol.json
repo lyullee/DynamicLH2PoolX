@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-09",
+  "scope": "declared liquid already reaching a horizontal concrete surface; conditional smooth axisymmetric model predictions",
+  "rate_kg_s": [
+    0.03535,
+    0.0707,
+    0.1414
+  ],
+  "shutoff_s": [
+    60,
+    180,
+    561
+  ],
+  "source_basis": "0.5x,1x,2x HSE Test 6 nominal rate used as declared ground inflow, not a deposition prediction",
+  "surface": {
+    "k_W_mK": 0.93,
+    "alpha_m2_s": 4.8e-07,
+    "T0_K": 266
+  },
+  "source_radius_m": 0.025,
+  "retention_depth_m": 0.005,
+  "reported_front_depth_m": 0.00075,
+  "radial_step_m": 0.01,
+  "maximum_time_step_s": 0.02,
+  "domain_radius_m": 4.0,
+  "output_interval_s": 1.0,
+  "tail_horizon_s": 180,
+  "momentum_closure": "zero_radial_momentum_vapor",
+  "quasi_steady_comparator": {
+    "ambient_pressure_Pa": 101325,
+    "storage_pressure_barg": 0,
+    "deposition_fraction": 1,
+    "heat_flux_cap": null,
+    "post_shutoff": "no inventory model; memoryless comparator assigned zero, not a post-shutoff LH2PoolX prediction"
+  },
+  "metrics": [
+    "inventory_at_stop",
+    "post_stop_evaporation_mass",
+    "t90_post_stop",
+    "t99_post_stop",
+    "reported_dryout",
+    "inventory_exhaustion",
+    "unledgered_residual",
+    "boundary_outflow"
+  ],
+  "calibration": "existing JUEL Trial3/5 parameters frozen; Trial4/6 assessed without reselecting",
+  "water_scope": "short validation only; not used for concrete shutdown scenario extrapolation",
+  "comparison_boundary": "no SLABx calculation; PSEP retained fields untouched"
+}

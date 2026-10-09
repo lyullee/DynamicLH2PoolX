@@ -1,0 +1,27 @@
+{
+  "title": "DynamicLH2PoolX",
+  "description": "Time-dependent liquid-hydrogen spreading and evaporation for declared ground inflow. This release candidate preserves the v0.2.0.dev0 numerical methods and adds a frozen post-shutoff research dataset, reproduction scripts, full source snapshots, model equations and explicit evidence scope. JUEL held-out radius RMSEs are 0.1374 m and 0.1016 m. HSE end radius and reported-front disappearance are 0.92 m and 19 s; the full radius trajectory is not reproduced. Liquid inventory and evaporation histories remain model predictions.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Lee, Ugwiyeon",
+      "orcid": "0009-0008-8976-5363"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "liquid hydrogen",
+    "pool evaporation",
+    "source term",
+    "post-shutoff evaporation",
+    "process safety"
+  ],
+  "version": "0.2.0rc1",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/lyullee/DynamicLH2PoolX/tree/v0.2.0rc1",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -36,7 +36,7 @@ have been validated.
 | JUEL aluminium Trial 6 holdout | RMSE `0.1016 m`, MAE `0.0920 m`, bias `+0.0040 m`, video-band coverage `100%` | Held-out radius comparison with near-zero bias |
 | HSE RR985/RR986 Test 6 | end-of-release radius `0.92 m`; thermocouple-defined dryout `19 s` | Same-case-thermal-input-constrained independent radius assessment |
 | HSE conservation | maximum absolute unledgered residual `<1.2e-12 kg`; numerical adjustment `0 kg`; escaped mass `0 kg` | Numerical accounting check |
-| Automated tests | `51 passed` | Unit, contract, conservation, closure, and solver checks |
+| Automated tests | `50 passed` | Unit, contract, conservation, closure, and solver checks |
 
 The HSE radius observations are digitised from a published figure and are labelled
 `figure_digitised` in the manifest. The complete trajectory RMSE is `0.438 m`; the
@@ -53,7 +53,8 @@ is claimed. Digitisation intervals and predeclared parameter sensitivities are
 reported instead.
 
 See the [Stage C completion report](docs/stage-c-completion-report.md) for the full
-scope statement, input basis, source IDs, sensitivity runs, and limitations. The tracked reproducibility snapshot is
+scope statement, input basis, source IDs, sensitivity runs, and limitations. The
+The tracked reproducibility snapshot is
 [`data/stage_c_evidence.json`](data/stage_c_evidence.json). Full figures and
 execution manifests are generated locally under `outputs/stage_c/` when the
 validation runner is executed; that generated directory is intentionally ignored
@@ -92,7 +93,7 @@ The current PyPI build is a pre-release. Install this exact reproducibility
 artifact with:
 
 ```powershell
-python -m pip install --pre dynamiclh2poolx==0.2.0rc1
+python -m pip install --pre dynamiclh2poolx==0.2.0.dev0
 ```
 
 Once a stable release is published, the `--pre` flag and version pin can be
@@ -270,14 +271,3 @@ Code is released under the MIT License. Experimental data and digitised derivati
 points remain subject to their original source licences. See [CITATION.cff](CITATION.cff)
 and the [Stage C completion report](docs/stage-c-completion-report.md) for the cited
 JUEL, HSE, Xie, and supporting sources.
-
-## Research reproducibility update 0.2.0rc1
-
-The released model equations and public API are unchanged from 0.2.0.dev0.
-The [model equations and code map](docs/model-equations.md) describe the actual
-implementation, input boundary, numerical operators and inventory accounting.
-
-The frozen [post-shutoff study](research/post_shutoff_20261009/README.md) includes
-CSV comparisons, scenario outputs, input protocol, immutable source snapshots and
-plotting/calculation scripts. Its liquid-inventory outputs are predictions, not
-directly measured vapor rates. It does not change previously published FFI fields.

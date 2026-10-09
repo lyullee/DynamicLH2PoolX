@@ -1,0 +1,150 @@
+{
+  "protocol_id": "dynamiclh2poolx_stage_c_restricted_20260911",
+  "data_quality": "figure_digitised",
+  "assessment_label": "same-case-thermal-input-constrained independent radius assessment",
+  "independence_statement": "radius observations were not used to fit any coefficient; same-case initial ground temperature is a measured input; k and alpha are the RR985-published GASP defaults, not inferred from Test 6 radius",
+  "source_record_ids": [
+    "HSE_RR986_TEST6_VERTICAL_100MM",
+    "HSE_RR985_TEST6_FIG2_RADIUS",
+    "HSE_RR985_TEST6_TABLE6_INPUT",
+    "HSE_RR985_TEST6_FIG9_GASP_COMPARISON"
+  ],
+  "source_hashes_sha256": {
+    "rr985_pdf": "5e1e1df0b4399a82f95a0511a01b1979c05ff50eef7781774fdcb923ed86bbd2",
+    "rr986_pdf": "bc124250aad5e114031c80ed0236dc912e9cd05ff263bd34919e97a83863390a",
+    "radius_csv": "504c27f62e18a12cbc5f843565b52a41691f4a4071fd18e65e2502e65a961acb",
+    "protocol": "92749315664cb7af85b3e8f8aaac0e6e6a88021291023be325a648b294d0a849",
+    "source_manifest": "8fa0f1a0e7706d770b8738a93930f00314ccf413f74e30574ab097fdcf863532",
+    "runner": "218c2ea5d08d021a61923f7706958d353cce930df6b132c3453f49266486d433",
+    "dynamic_pool.py": "0d1b6c68d6641ec2956296862fc06c41156d3854350db7d6889fc8e08a683eb4",
+    "spreading.py": "9ce3fd4b4ee59022372945a839f2c3490afab8a22a2aaa9c2a56a93accc6cc32"
+  },
+  "software": {
+    "dynamiclh2poolx": "0.2.0.dev0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "declared_inputs": {
+    "source_ids": [
+      "HSE_RR986_TEST6_VERTICAL_100MM",
+      "HSE_RR985_TEST6_FIG2_RADIUS",
+      "HSE_RR985_TEST6_TABLE6_INPUT",
+      "HSE_RR985_TEST6_FIG9_GASP_COMPARISON"
+    ],
+    "assessment_label": "same-case-thermal-input-constrained independent radius assessment",
+    "release_rate_kg_s": 0.0707,
+    "release_duration_s": 561.0,
+    "aperture_diameter_m": 0.025,
+    "initial_ground_temperature_K": 266.0,
+    "concrete_conductivity_W_mK": 0.93,
+    "concrete_diffusivity_m2_s": 4.8e-07,
+    "surface_retention_depth_m": 0.005,
+    "input_basis": "RR985 Tables 3 and 6; 5 mm retention is physical concrete roughness/puddle depth, not fitted to radius",
+    "assessment_targets": {
+      "end_of_release_radius_m": [
+        0.9,
+        1.0
+      ],
+      "dryout_after_stop_s": [
+        12.0,
+        22.0
+      ],
+      "expansion_retraction": "diagnostic only because condensed-air solid deposition is outside the model"
+    }
+  },
+  "primary_result": {
+    "end_of_release_radius_m": 0.92,
+    "end_of_release_liquid_mass_kg": 1.063820624757916,
+    "reported_dryout_after_release_stop_s": 19.0,
+    "inventory_exhaustion_after_release_stop_s": null,
+    "maximum_reported_radius_m": 0.92,
+    "mass_balance_residual_kg": 3.410605131648481e-13,
+    "maximum_absolute_unledgered_mass_residual_kg": 6.681322162194192e-13,
+    "cumulative_numerical_mass_adjustment_kg": 0.0,
+    "escaped_domain_mass_kg": 0.0
+  },
+  "trajectory_metrics_diagnostic_only": {
+    "release_points": 13,
+    "point_rmse_m": 0.4382482612190703,
+    "time_interval_minimum_residual_rmse_m": 0.422601831151153,
+    "solid_deposition_peak_reproduced": false,
+    "reason_non_gating": "RR985 attributes the 1.3-1.4 m expansion/retraction pulse to condensed-air solid deposition, outside the smooth pool model"
+  },
+  "predeclared_input_sensitivity": {
+    "source_footprint_radius_m": {
+      "0.0125": {
+        "end_of_release_radius_m": 0.92,
+        "end_of_release_liquid_mass_kg": 1.0544259514451688,
+        "reported_dryout_after_release_stop_s": 19.0,
+        "inventory_exhaustion_after_release_stop_s": 22.0,
+        "maximum_reported_radius_m": 0.92,
+        "mass_balance_residual_kg": -7.105427357601002e-14,
+        "maximum_absolute_unledgered_mass_residual_kg": 6.061817714453355e-13,
+        "cumulative_numerical_mass_adjustment_kg": 0.0,
+        "escaped_domain_mass_kg": 0.0
+      },
+      "0.025": {
+        "end_of_release_radius_m": 0.92,
+        "end_of_release_liquid_mass_kg": 1.063820624757916,
+        "reported_dryout_after_release_stop_s": 19.0,
+        "inventory_exhaustion_after_release_stop_s": null,
+        "maximum_reported_radius_m": 0.92,
+        "mass_balance_residual_kg": 3.410605131648481e-13,
+        "maximum_absolute_unledgered_mass_residual_kg": 6.681322162194192e-13,
+        "cumulative_numerical_mass_adjustment_kg": 0.0,
+        "escaped_domain_mass_kg": 0.0
+      },
+      "0.05": {
+        "end_of_release_radius_m": 0.92,
+        "end_of_release_liquid_mass_kg": 1.078545837291631,
+        "reported_dryout_after_release_stop_s": 19.0,
+        "inventory_exhaustion_after_release_stop_s": 22.0,
+        "maximum_reported_radius_m": 0.92,
+        "mass_balance_residual_kg": -5.329070518200751e-13,
+        "maximum_absolute_unledgered_mass_residual_kg": 8.111289417911394e-13,
+        "cumulative_numerical_mass_adjustment_kg": 0.0,
+        "escaped_domain_mass_kg": 0.0
+      }
+    },
+    "surface_retention_depth_m": {
+      "0.004": {
+        "end_of_release_radius_m": 0.92,
+        "end_of_release_liquid_mass_kg": 0.8840035215707704,
+        "reported_dryout_after_release_stop_s": 15.0,
+        "inventory_exhaustion_after_release_stop_s": 18.0,
+        "maximum_reported_radius_m": 0.92,
+        "mass_balance_residual_kg": 2.984279490192421e-13,
+        "maximum_absolute_unledgered_mass_residual_kg": 6.17284001691587e-13,
+        "cumulative_numerical_mass_adjustment_kg": 0.0,
+        "escaped_domain_mass_kg": 0.0
+      },
+      "0.005": {
+        "end_of_release_radius_m": 0.92,
+        "end_of_release_liquid_mass_kg": 1.063820624757916,
+        "reported_dryout_after_release_stop_s": 19.0,
+        "inventory_exhaustion_after_release_stop_s": null,
+        "maximum_reported_radius_m": 0.92,
+        "mass_balance_residual_kg": 3.410605131648481e-13,
+        "maximum_absolute_unledgered_mass_residual_kg": 6.681322162194192e-13,
+        "cumulative_numerical_mass_adjustment_kg": 0.0,
+        "escaped_domain_mass_kg": 0.0
+      },
+      "0.006": {
+        "end_of_release_radius_m": 0.91,
+        "end_of_release_liquid_mass_kg": 1.235639720149026,
+        "reported_dryout_after_release_stop_s": 23.0,
+        "inventory_exhaustion_after_release_stop_s": 26.0,
+        "maximum_reported_radius_m": 0.91,
+        "mass_balance_residual_kg": -5.400124791776761e-13,
+        "maximum_absolute_unledgered_mass_residual_kg": 8.604228440844963e-13,
+        "cumulative_numerical_mass_adjustment_kg": 0.0,
+        "escaped_domain_mass_kg": 0.0
+      }
+    }
+  },
+  "assessment_checks": {
+    "end_of_release_radius": true,
+    "dryout_time": true,
+    "conservation_and_domain": true
+  },
+  "decision": "PASS_HSE_RADIUS_ASSESSMENT_ENDPOINTS_WITH_STRUCTURAL_LIMITATION"
+}

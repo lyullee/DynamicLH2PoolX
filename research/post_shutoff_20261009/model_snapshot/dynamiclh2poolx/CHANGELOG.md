@@ -1,13 +1,5 @@
 # Changelog
 
-## 0.2.0rc1 — 2026-10-09
-
-- Model equations, implementation map and citation metadata updated.
-- No solver equations, physical parameters or numerical results changed.
-- Frozen post-shutoff study data, original source snapshots and portable reproduction scripts added.
-- Release remains a candidate with restricted component evidence, not general spill validation.
-
-
 ## 0.2.0.dev0 — unreleased
 
 - Stage C reinforcement completed (2026-09-11) with integrated decision

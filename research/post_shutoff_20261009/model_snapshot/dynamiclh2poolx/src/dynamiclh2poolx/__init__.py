@@ -22,7 +22,7 @@ from .pool import (
     quasi_steady,
 )
 
-__version__ = "0.2.0rc1"
+__version__ = "0.2.0.dev0"
 
 __all__ = [
     "__version__", "CONCRETE_CRYOGENIC", "CRITICAL_HEAT_FLUX_W_M2",

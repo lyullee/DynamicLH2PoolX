@@ -1,0 +1,44 @@
+{
+  "metrics": [
+    {
+      "surface": "water",
+      "role": "calibration",
+      "n": 7,
+      "rmse_m": 0.18126539343499315,
+      "mae_m": 0.12857142857142856,
+      "bias_m": -0.12857142857142856,
+      "mass_balance_residual_kg": -5.684341886080802e-14
+    },
+    {
+      "surface": "water",
+      "role": "holdout",
+      "n": 9,
+      "rmse_m": 0.13743685418725532,
+      "mae_m": 0.1222222222222222,
+      "bias_m": -0.07777777777777775,
+      "mass_balance_residual_kg": -5.684341886080802e-14
+    },
+    {
+      "surface": "aluminium",
+      "role": "calibration",
+      "n": 5,
+      "rmse_m": 0.12868566353716332,
+      "mae_m": 0.10800000000000001,
+      "bias_m": -0.10800000000000001,
+      "mass_balance_residual_kg": -1.3145040611561853e-13
+    },
+    {
+      "surface": "aluminium",
+      "role": "holdout",
+      "n": 10,
+      "rmse_m": 0.10158740079360236,
+      "mae_m": 0.092,
+      "bias_m": 0.0040000000000000036,
+      "mass_balance_residual_kg": -1.3145040611561853e-13
+    }
+  ],
+  "source": "archived figure transcription; original report website returned a challenge page, not a PDF",
+  "observation_sha256": "8d7f21ec41caa52203c71454f7ae7c3b5fd923319819fc5fc0731e3143c9cad0",
+  "parameters_reselected": false,
+  "decision": "PASS_RESTRICTED_SPREADING"
+}
