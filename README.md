@@ -281,3 +281,9 @@ The frozen [post-shutoff study](research/post_shutoff_20261009/README.md) includ
 CSV comparisons, scenario outputs, input protocol, immutable source snapshots and
 plotting/calculation scripts. Its liquid-inventory outputs are predictions, not
 directly measured vapor rates. It does not change previously published FFI fields.
+
+## Archived release
+
+Version DOI: https://doi.org/10.5281/zenodo.23258021
+
+All versions: https://doi.org/10.5281/zenodo.23257983
